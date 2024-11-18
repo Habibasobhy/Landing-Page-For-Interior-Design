@@ -1,0 +1,791 @@
+:root{
+    /* * Fonts */
+    --font-primary : "Inter",sans-serif;
+
+    /* * Colors */
+    --main-color : #1F1F1F;
+    --secondary-color : #545454;
+    --light-color : #FFFFFF;
+    --light-grey-color : #D1D1D1;
+    --dark-grey-color : #929292;
+}
+
+/* * Utilities */
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: var(--font-primary);
+}
+
+body > :not(footer){
+    padding: 30px 48px;
+}
+
+.logo{
+    width: 177px;
+    height: 48px;
+}
+
+h1,h2,h3{
+    color:var(--main-color);
+}
+
+h2{
+    font-size: 58px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.p-outside-card{
+    color : var(--secondary-color);
+}
+
+.button{
+    background-color : var(--main-color);
+    color : var(--light-color);
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+@media screen and (max-width:600px) {
+    body > :not(footer){
+        padding-inline: 3px;
+        
+    }
+}
+
+/* & Start   Navbar   Style */
+
+nav .nav-link {
+    font-size: 22px !important;
+}
+
+nav .nav-link:not(.active){
+    color : var(--secondary-color) !important;
+}
+
+nav .signUp{
+    padding-inline: 35px !important;
+    border-radius: 4px !important;
+    font-size: 20px !important;
+}
+
+/* & End    Navbar   Style */
+
+/* ^ ============================================================ */
+
+/* & Start   Home   Style */
+
+.home{
+    margin-block: 48px;
+}
+
+.home h1{
+    font-size: 120px;
+    font-weight: 500;
+}
+
+.home .col-md-8 p{
+    width: 700px;
+}
+
+.home .row .col-md-6 button{
+    width: 302px;
+    height: 86px;
+    margin-bottom: 100px;
+}
+
+.home .row .col-md-6 .counts .content{
+    width: 170px;
+    height: 116px;
+    line-height:30px;
+    font-weight: 400;
+}
+
+.home .row .col-md-6 .counts .content p,
+.home .row .col-md-6 .counts .content i{
+    font-size: 60px;
+}
+
+.home .row .col-md-6 .counts .content span{
+    font-size : 22px;
+}
+
+.home .row .col-md-6 .rectangle{
+    width: 160px;
+    height: 187px;
+    border: 2px solid var(--main-color);
+    border-radius : 4px;
+    left: 25px;
+    z-index : -1;
+}
+
+.home .row .col-md-6 img{
+    width : 85%;
+    height: 406px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+.home .row .col-md-6 .arrow-down{
+    width: 151px;
+    height: 151px;
+    background-color : var(--main-color);
+}
+
+@media screen and (max-width:444px){
+    .home .row .col-md-6 .counts .content {
+        width: 30%;
+    }
+
+    .home .row .col-md-6 .counts .content p,
+    .home .row .col-md-6 .counts .content i {
+        font-size: 30px;
+    }
+
+    .home .row .col-md-6 .counts .content span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .home{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .home h1 {
+        font-size: 46px;
+    }
+
+    .home .col-md-8 p {
+        width: 100%;
+    }
+
+    .home .row .col-md-6 button {
+        margin-block: 50px;
+    }
+}
+
+@media screen and (min-width:445px) and (max-width:1200px) {
+    .home .row .col-md-6 .counts .content {
+        width: 30%;
+    }
+
+    .home .row .col-md-6 .counts .content p,
+    .home .row .col-md-6 .counts .content i {
+        font-size: 45px;
+    }
+
+    .home .row .col-md-6 .counts .content span {
+        font-size: 14px;
+    }
+}
+/* & End     Home   Style */
+
+/* ^ ============================================================ */
+
+/* & Start   Service   Style */
+
+.service .container-fluid .service-header .line{
+    width: 100px;
+    height: 3px;
+    background-color : var(--main-color);
+}
+
+.service .container-fluid .row .col-md-4 img{
+    width: 72px;
+    height: 70px;
+}
+
+.service .container-fluid .row .col-md-4 .service-content p{
+    line-height: 36.34px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:506px) {
+    .service .container-fluid .service-header h2{
+        font-size: 30px;
+    }
+
+    .service .container-fluid .service-header{
+        margin-bottom: 20px !important;
+    }
+
+    .service{
+        margin-bottom: 0 !important;
+    }
+}
+/* & End     Service   Style */
+
+/* ^ ============================================================ */
+
+/* & Start   Designing-Your-Dream    Style  */
+
+.Designing-Your-Dream .row .col-md-6 p{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 39.65px;
+}
+
+.Designing-Your-Dream .row .col-md-6 .add-design{
+    height: 63.5px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.Designing-Your-Dream .row .col-md-6 button{
+    width: 240px;
+    height: 80px;
+}
+
+@media screen and (max-width:767px){
+    .Designing-Your-Dream .row .col-md-6 h2{
+        font-size: 35px;
+    }
+
+    .Designing-Your-Dream .row .col-md-6 button{
+        width: 170px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .Designing-Your-Dream .row .col-md-6 h2{
+        font-size: 30px;
+    }
+
+    .Designing-Your-Dream .row .col-md-6 p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .Designing-Your-Dream .row .col-md-6 button{
+        width: 170px;
+        height: 50px;
+    }
+    
+}
+
+@media screen and (min-width:993px) and (max-width:1200px){
+    .Designing-Your-Dream .row .col-md-6 h2{
+        font-size: 40px;
+    }
+
+    .Designing-Your-Dream .row .col-md-6 p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .Designing-Your-Dream .row .col-md-6 button{
+        width: 170px;
+        height: 50px;
+    }
+    
+}
+
+/* & End     Designing-Your-Dream    Style  */
+
+/* ^ ============================================================ */
+
+/* & Start   Process   Style */
+
+.process .container-fluid .row .col-md-6 h2{
+    font-size: 50px;
+}
+
+.process .container-fluid .row .col-md-6 .process-icon-line{
+    width: 60px;
+}
+
+.process .container-fluid .row .col-md-6 .process-icon-line .icon{
+    width: 60px;
+    height: 60px;
+}
+
+.process .container-fluid .row .col-md-6 .process-icon-line .line{
+    background-color : #9B9B9B;
+    width: 1px;
+    height: 80px;
+}
+
+.process .container-fluid .row .col-md-6 .process-content h3{
+    font-weight: 700;
+}
+
+.process .container-fluid .row .col-md-6 .process-content p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 39.65px;
+}
+
+@media screen and (max-width:1200px){
+    .process .container-fluid .row .col-md-6 h2{
+        font-size: 30px;
+    }
+
+    .process .container-fluid .row .col-md-6 .process-content{
+        margin-block: 5%;
+    }
+
+    .process .container-fluid .row .col-md-6 .process-content h3{
+        font-size: 25px;
+        line-height: 0;
+    }
+    
+    .process .container-fluid .row .col-md-6 .process-content p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 25px !important;
+    }
+}
+/* & End     Process   Style */
+
+/* ^ ============================================================ */
+
+/* & Start   Testimonials   Style*/
+
+.testimonials .container-fluid .row .col-md-6 .card-left,
+.testimonials .container-fluid .row .col-md-6 .card-right{
+    width: 75%;
+    height: auto;
+    border-radius: 4px;
+    background-color : var(--main-color);
+    top: 29%;
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-left{
+    left : 37.5%;
+}
+
+.testimonials .container-fluid .row .col-md-6 .arrows{
+    bottom : -90px;
+}
+
+.testimonials .container-fluid .row .col-md-6 .arrows .arrow{
+    width : 60px;
+    height: 60px;
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-right{
+    right : 3.5%;
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-left p,
+.testimonials .container-fluid .row .col-md-6 .card-right p{
+    color : var(--light-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 39.65px;
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-left h4,
+.testimonials .container-fluid .row .col-md-6 .card-right h4{
+    color : var(--light-color);
+    font-size: 24px;
+    line-height: 30.65px;
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-content p,
+.testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-content p{
+    color : var(--dark-grey-color);
+}
+
+.testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-img,
+.testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-img{
+    width: 72px;
+    height: 72px;
+}
+
+@media screen and (max-width:429px){
+    .testimonials .container-fluid .row .col-md-6 .card-left{
+        top: 100px;
+        padding: 10px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        top : 170px;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:500px){
+    .testimonials .container-fluid .row .col-md-6 .card-left{
+        top: 130px;
+        padding: 30px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        top : 180px
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:626px){
+    .testimonials .container-fluid .row .col-md-6 .card-left{
+        top: 150px;
+        padding: 40px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        top : 180px
+    }
+}
+
+@media screen and (max-width:767px){
+    .testimonials .container-fluid .row .col-md-6 .card-left{
+        width: 60%;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:626px) {
+    .testimonials .container-fluid .row .col-md-6 .card-left>p,
+    .testimonials .container-fluid .row .col-md-6 .card-right>p {
+        font-size: 15px;
+        line-height: 25px;
+        padding-block: 30px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-content p,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-content p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left h4,
+    .testimonials .container-fluid .row .col-md-6 .card-right h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-img,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 h2{
+        font-size: 30px;
+        margin-top: 90px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .arrows .arrow{
+        width : 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:627px) and (max-width:767px){
+    .testimonials .container-fluid .row .col-md-6 .card-left{
+        padding: 48px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        top : 220px
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left>p,
+    .testimonials .container-fluid .row .col-md-6 .card-right>p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-block: 30px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-content p,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left h4,
+    .testimonials .container-fluid .row .col-md-6 .card-right h4 {
+        font-size: 16px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-img,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 h2{
+        font-size: 35px;
+        margin-top: 120px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .arrows .arrow{
+        width : 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:940px){
+    .testimonials .container-fluid .row .col-md-6 .arrows .arrow{
+        width : 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:941px) and (max-width:1200px){
+    .testimonials .container-fluid .row .col-md-6 .arrows .arrow{
+        width : 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .testimonials .container-fluid .row .col-md-6 .card-left>p,
+    .testimonials .container-fluid .row .col-md-6 .card-right>p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-block: 40px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-content p,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left h4,
+    .testimonials .container-fluid .row .col-md-6 .card-right h4 {
+        font-size: 16px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-img,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 h2{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    .testimonials .container-fluid .row .col-md-6 .card-left,
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        height: 90%;
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:1760px){
+    .testimonials .container-fluid .row .col-md-6 .card-left>p,
+    .testimonials .container-fluid .row .col-md-6 .card-right>p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:1761px){
+    .testimonials .container-fluid .row .col-md-6 .card-left>p,
+    .testimonials .container-fluid .row .col-md-6 .card-right>p {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .testimonials .container-fluid .row .col-md-6 .card-left,
+    .testimonials .container-fluid .row .col-md-6 .card-right{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-icon,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-icon{
+        width: 30%;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-img,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-img {
+        margin-right: 40px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left h4,
+    .testimonials .container-fluid .row .col-md-6 .card-right h4 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .testimonials .container-fluid .row .col-md-6 .card-left .card-footer .card-footer-content p,
+    .testimonials .container-fluid .row .col-md-6 .card-right .card-footer .card-footer-content p {
+        font-size: 30px;
+    }
+    
+}
+
+
+/* & End     Testimonials   Style*/
+
+/* ^ ============================================================ */
+
+/* & Start   NewsLetter   Style*/
+
+.newsLetter .container{
+    width: 60%;
+}
+
+.newsLetter .container p{
+    width: 95%;
+}
+
+.newsLetter .container .email-input{
+    margin-top: 90px;
+    box-shadow: 0px 10px 100px 0px #00000024;
+    border-radius : 4px;
+}
+
+.newsLetter .container .email-input i{
+    left : 10px;
+    top: 27px;
+}
+
+.newsLetter .container .email-input button{
+    right: 5px;
+    top: 8px;
+}
+
+.newsLetter .container .email-input i,
+.newsLetter .container .email-input input::placeholder{
+    color : #8C8C8C !important;
+    padding-left: 40px;
+}
+
+@media screen and (max-width:380px){
+    .newsLetter .container .email-input button{
+        padding-inline: 15px !important;
+    }
+
+    .newsLetter .container .email-input input::placeholder{
+        font-size: 15px !important;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:437px){
+    .newsLetter .container .email-input button{
+        padding-inline: 20px !important;
+    }
+}
+
+@media screen and (max-width : 548px){
+    .newsLetter .container h2{
+        font-size: 30px;
+    }
+
+    .newsLetter .container p{
+        font-size: 16px;
+    }
+
+    .newsLetter .container .email-input input,
+    .newsLetter .container .email-input i{
+        padding-left: 0 !important;
+    }
+
+}
+
+@media screen and (min-width : 549px) and (max-width : 1200px){
+    .newsLetter .container h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:678px){
+    .newsLetter{
+        margin-top: 250px;
+    }
+}
+
+@media screen and (min-width : 679px) and (max-width : 818px){
+    .newsLetter{
+        margin-top: 300px;
+    }
+}
+
+@media screen and (min-width : 819px) and (max-width : 888px){
+    .newsLetter{
+        margin-top: 220px;
+    }
+}
+
+@media screen and (min-width : 889px) and (max-width : 1060px){
+    .newsLetter{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .newsLetter .container,
+    .newsLetter .container p{
+        width: 100%;
+    }
+}
+
+/* & End     NewsLetter   Style*/
+
+/* ^ ============================================================ */
+
+/* & Start   Footer   Style */
+
+footer{
+    background-color : var(--main-color);
+    margin-top: -65px;
+    padding-inline: 48px;
+}
+
+.footer .col-sm-6 p{
+    color : var(--light-grey-color);
+    font-size: 22px;
+    line-height: 33.15px;
+}
+
+.footer .col-lg-4 .footer-icons .icon{
+    width : 32px;
+    height: 32px;
+    background-color : #313131;
+}
+
+.footer .col-lg-2 ul:not(li:nth-child(1)){   
+    color : var(--light-grey-color);
+    font-size: 22px;
+}
+
+@media screen and (max-width:576px){
+    .footer .row .col-lg-2:nth-child(2){
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1130px){
+    .footer .col-lg-2 ul .email{
+        font-size: 20px;
+    }
+}
+
+/* & End     Footer   Style */
+
+/* ^ ============================================================ */
